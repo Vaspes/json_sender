@@ -12,6 +12,7 @@ use clap::Parser;
 struct Config {
     api_url: String,
     auth_header: String,
+    content_type: String,
 }
 
 #[derive(Parser, Debug)]
@@ -43,7 +44,6 @@ fn main() {
 
     // HTTP client setup
     let client = Client::new();
-    let content_type = "application/infracht.load.v1+json;charset=UTF-8";
 
     // Send requests with delay
     for line in reader.lines() {
@@ -52,7 +52,7 @@ fn main() {
         let response = client
             .post(&config.api_url)
             .header("Authorization", &config.auth_header)
-            .header("Content-Type", content_type)
+            .header("Content-Type", &config.content_type)
             .body(json_payload)
             .send()
             .expect("Error sending request");
