@@ -19,7 +19,7 @@ cd json_sender
 cargo build --release
 ````
 ## Usage
-1. Create config file:
+1. Create config file (in toml format) with required options:
 ````Ini,Toml
     api_url = "https://your-api-endpoint"
     auth_header = "YourActualAuthHeaderString"
