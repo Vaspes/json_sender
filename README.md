@@ -27,3 +27,7 @@ cargo build --release
 ````
 2. Prepare a JSON data file
 * Each line of the file should contain a valid JSON object.
+3. Commandline options
+* `--data_file <path>`: Required. Path to the JSON data file.
+* `--config_file <path>`: Required. Path to the TOML configuration file.
+* `--delay <seconds>`: Optional. Delay between requests in seconds (default: 0).
