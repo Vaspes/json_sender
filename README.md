@@ -4,7 +4,7 @@ A Rust application (written by AI model as an example app) to read a JSON payloa
 
 ## Features
 
-* Reads a JSON file containing an list of payloads (one per file).
+* Reads a JSON file containing an list of payloads (one per line).
 * Sends each JSON object as the body of an HTTP POST request.
 * Supports the  "application/infracht.load.v1+json;charset=UTF-8" content type.
 * Configurable API address and authentication header via a TOML configuration file.
