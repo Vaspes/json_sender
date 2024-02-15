@@ -24,6 +24,7 @@ cargo build --release
 ````Ini,Toml
     api_url = "https://your-api-endpoint"
     auth_header = "YourActualAuthHeaderString"
+    content_type = "YourContentType"
 ````
 2. Prepare a JSON data file
 * Each line of the file should contain a valid JSON object.
